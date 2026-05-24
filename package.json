@@ -1,0 +1,61 @@
+{
+  "name": "html-term",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SolidJS custom renderer for the terminal. Render reactive web components as ANSI output, mid-conversation in AI coding agents.",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./solid": {
+      "types": "./dist/solid/index.d.ts",
+      "default": "./dist/solid/index.js"
+    },
+    "./cli": {
+      "types": "./dist/cli/index.d.ts",
+      "default": "./dist/cli/index.js"
+    },
+    "./canvas": {
+      "types": "./dist/canvas/index.d.ts",
+      "default": "./dist/canvas/index.js"
+    },
+    "./resolvers": {
+      "types": "./dist/resolvers/index.d.ts",
+      "default": "./dist/resolvers/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.js"
+    },
+    "./stream": {
+      "types": "./dist/stream/index.d.ts",
+      "default": "./dist/stream/index.js"
+    }
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.0"
+  },
+  "dependencies": {
+    "string-width": "^7.0.0",
+    "sucrase": "^3.1.0"
+  },
+  "optionalDependencies": {
+    "@babel/core": "^7.24.0",
+    "babel-preset-solid": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "solid-js": "^1.9.0",
+    "typescript": "^5.4.0",
+    "vite-plugin-solid": "^2.10.0",
+    "vitest": "^1.6.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
